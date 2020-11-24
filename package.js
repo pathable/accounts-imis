@@ -1,6 +1,6 @@
 Package.describe({
   summary: "Login service for Imis accounts",
-  version: "1.0.0",
+  version: "1.0.1",
   name: "pathable:accounts-imis",
   git: "https://github.com/pathable/accounts-imis",
 });
@@ -14,7 +14,7 @@ Package.onUse((api) => {
   api.imply("accounts-base", ["client", "server"]);
 
   api.use("accounts-oauth", ["client", "server"]);
-  api.use("pathable:imis-oauth@1.0.0");
+  api.use("pathable:imis-oauth@1.0.2");
   api.imply("pathable:imis-oauth");
 
   api.addFiles("imis.js");
